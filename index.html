@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/download.jpg"class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I am <span>Abhishek</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello People's! It's Abhishek here among you all . I have completed my High School with Cental Board Of Secondary Education and secured 70%. I have completed my Intermediate with Central Board Of Secondary Education  and secured 69% .After that I had done my Under Graduation from University of Lucknow (Bachelor of Science with Computer Science) and secured aggregate 60% marks with First Division. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Developement</span><br>Design Web/App Interface</li>
+                        <li><span> Web Developement</span><br>Design Web Application</li>
+                        <li><span>App Developement</span><br>Design Mobile Application</li>
+                       
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>October 2032 - Present</span><br>Web Developement Internship at CODSOFT </li>
+                        
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016-2018(HIGH SCHOOL)</span><br>(Central Board Of Secondary Education- 70%)</li>
+                        <li><span> 2018-2020(Intermediate)</span><br>(Central Board Of Secondary Education- 68.5%)</li>
+                        <li><span>2020-2023(GRADUATION)</span><br>(University of Lucknow- 61%)</li>
+                       
+                    
+                    </ul>
+                </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+         function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab")
+            }
+           event.currentTarget.classlist.add("active-links") 
+         }
+
+    </script>
+</body>
+</html>
